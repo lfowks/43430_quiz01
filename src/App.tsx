@@ -6,7 +6,7 @@ import ComponentC from './components/ComponentC'
 function App() {
   return (
     <>
-      <h1>Quiz 01</h1>
+      <h1>Quiz 01 Isaac Villegas 504560937</h1>
       <div className='flex-container'>
         <div className='flex-container'>
           <ComponentA/>
