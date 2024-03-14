@@ -1,14 +1,14 @@
-const ComponentC = () => {
+const ComponentC = ({counterAB, counterC, setCounter}) => {
 
   return (
     <div className="card">
       C
         <span className='span'>
-          1
+          {counterC}
         </span>
-        <button type="button">CAMBIAR A, B y C</button>
+        <button type="button" onClick={()=> setCounter(counterAB+1)}>CAMBIAR A, B y C</button>
         <br/>
-        <button type="button">RESETEAR TODO</button>
+        <button type="button" onClick={()=> setCounter(1)}>RESETEAR TODO</button>
       </div>
   )
 }
