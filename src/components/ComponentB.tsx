@@ -1,15 +1,16 @@
-
-
+import { useState } from "react";
 const ComponentB = () => {
-  return (
-    <div className="card">
-      B
-        <span className='span'>
-          1
+  const [number, setNumber] = useState(1);
+    return (
+      <div className="card">
+        B
+        <span className='span'>{number}
         </span>
-        <button type="button">CAMBIAR A Y B</button>
+        <button type="button" onClick={() => setNumber(number + 1)}>CAMBIAR A Y B</button>
       </div>
-  )
-}
+    )
+  }
+
+
 
 export default ComponentB
