@@ -1,5 +1,5 @@
-const ComponentC = () => {
 
+const ComponentC = () => {
   return (
     <div className="card">
       C
@@ -12,5 +12,6 @@ const ComponentC = () => {
       </div>
   )
 }
+
 
 export default ComponentC
