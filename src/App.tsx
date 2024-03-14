@@ -2,6 +2,8 @@ import './App.css'
 import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
+import Counter from "./ejercicios/UseState/Counter";
+import TestEffect from "./ejercicios/UseEffect/TestEffect";
 
 function App() {
   return (
