@@ -1,6 +1,10 @@
+import { useState } from "react"
+import ComponentA from "./ComponentA"
 
+const ComponentB = ({numberToShow}: {numberToShow: string}) => {
 
-const ComponentB = () => {
+  const [myNumber, setMyNumber] = useState(numberToShow);
+
   return (
     <div className="card">
       B

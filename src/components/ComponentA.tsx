@@ -1,6 +1,17 @@
+const ComponentA = (
+  {
+    NumberToShow,
+    setMyNumber
+  }:
+  {
+    textToShow: string,
+    setMyNumber:(text: string) => void
+  }) => {
 
-
-const ComponentA = () => {
+  const actualizar = () => {
+    setMyNumber('1')
+  }
+    
   return (
     <div className="card">
       A
