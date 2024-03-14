@@ -1,6 +1,9 @@
-
+import {} from 'react'
 
 const ComponentA = () => {
+  
+
+
   return (
     <div className="card">
       A

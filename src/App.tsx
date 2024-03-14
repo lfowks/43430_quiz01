@@ -4,6 +4,9 @@ import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
 
 function App() {
+
+  
+
   return (
     <>
       <h1>Quiz 01 - 504500656</h1>
@@ -13,7 +16,7 @@ function App() {
           <ComponentB/>
         </div>
         <div>
-          <ComponentC/>
+          <ComponentC />
         </div>
       </div>
     </>
