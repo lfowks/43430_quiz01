@@ -1,13 +1,22 @@
+import { useState } from "react"
+
+const getInitialClicks = (){
+
+  
+}
 
 
 const ComponentB = () => {
+
+  const [clicks, setClicks] = useState(()=> getInitialClicks());
+
   return (
     <div className="card">
       B
         <span className='span'>
-          1
+        const number = 1
         </span>
-        <button type="button">CAMBIAR A Y B</button>
+        <button onClick={()=> setClicks(clicks+1)}> {clicks} CAMBIAR A Y B </button>;
       </div>
   )
 }

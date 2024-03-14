@@ -1,4 +1,10 @@
+import { useState } from "react"
+
 const ComponentC = () => {
+
+  
+
+  const [clicks, setClicks] = useState(()=> getInitialClicks());
 
   return (
     <div className="card">
@@ -6,9 +12,9 @@ const ComponentC = () => {
         <span className='span'>
           1
         </span>
-        <button type="button">CAMBIAR A, B y C</button>
+        <button onClick={()=> setClicks(clicks+1)}> {clicks} CAMBIAR A, B y C </button>;
         <br/>
-        <button type="button">RESETEAR TODO</button>
+        <button onClick={()=> setClicks(clicks=0)}> {clicks} RESETEAR TODO </button>;
       </div>
   )
 }
