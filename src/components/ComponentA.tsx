@@ -1,14 +1,16 @@
+import React, { useState } from 'react';
 
+const ComponenteA: React.FC = () => {
+  const [contador, setContador] = useState<number>(1);
 
-const ComponentA = () => {
   return (
     <div className="card">
       A
-        <span className='span'>
-          1
-        </span>
-      </div>
-  )
-}
+      <span className='span'>
+        {contador}
+      </span>
+    </div>
+  );
+};
 
-export default ComponentA
+export default ComponenteA;

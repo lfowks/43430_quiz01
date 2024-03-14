@@ -1,15 +1,21 @@
+import React, { useState } from 'react';
 
+const ComponenteB: React.FC = () => {
+  const [contador, setContador] = useState<number>(1);
 
-const ComponentB = () => {
+  const handleChange = () => {
+    setContador(prevContador => prevContador + 1);
+  };
+
   return (
     <div className="card">
       B
-        <span className='span'>
-          1
-        </span>
-        <button type="button">CAMBIAR A Y B</button>
-      </div>
-  )
-}
+      <span className='span'>
+        {contador}
+      </span>
+      <button type="button" onClick={handleChange}>CAMBIAR A Y B</button>
+    </div>
+  );
+};
 
-export default ComponentB
+export default ComponenteB;
