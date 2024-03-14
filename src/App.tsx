@@ -10,7 +10,7 @@ function App() {
       <div className='flex-container'>
         <div className='flex-container'>
           <ComponentA/>
-          <ComponentB/>
+          <ComponentB/> 
         </div>
         <div>
           <ComponentC/>
