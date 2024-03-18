@@ -1,11 +1,11 @@
 
 
-const ComponentA = () => {
+const ComponentA = ({counter,setCounter}) => {
   return (
     <div className="card">
       A
         <span className='span'>
-          1
+          {counter}
         </span>
       </div>
   )

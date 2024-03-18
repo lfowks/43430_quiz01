@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-const ComponentB = () => {
+const ComponentB = ({counter, setCounter}) => {
   return (
     <div className="card">
       B
         <span className='span'>
-          1
+          {counter}
         </span>
-        <button type="button">CAMBIAR A Y B</button>
+        <button type="button" onClick={()=>setCounter(counter+1)}>CAMBIAR A Y B</button>
       </div>
   )
 }
