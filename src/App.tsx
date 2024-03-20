@@ -1,30 +1,18 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import ComponentA from './components/ComponentA'
-import ComponentB from './components/ComponentB'
-import ComponentC from './components/ComponentC'
+import Mouse from './components/quiz02/Mouse'
+import Monitor from './components/quiz02/Monitor'
+import Total from './components/quiz02/Total'
 
 function App() {
-
-  const [counter, setCounter] = useState(1);
-  const [counterC, setCounterC] = useState(1);
-
-  useEffect(() => {
-    setCounter(counterC);
-  }, [counterC])
-  
-
   return (
     <>
-      <h1>Quiz 01 - 604040646</h1>
-      <div className='flex-container'>
-        <div className='flex-container'>
-          <ComponentA counter={counter}/>
-          <ComponentB counter={counter} setCounter={setCounter}/>
-        </div>
-        <div>
-          <ComponentC counterAB={counter} counterC={counterC} setCounter={setCounterC}/>
-        </div>
+      <h1>Quiz 02</h1>
+      <div className='flex'>
+        <Mouse/>
+        <Monitor/>
+      </div>
+      <div className='totals'>
+        <Total/>
       </div>
     </>
   )
