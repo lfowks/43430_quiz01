@@ -6,7 +6,7 @@ import Total from './components/quiz02/Total'
 function App() {
   return (
     <>
-      <h1>Quiz 02</h1>
+      <h1>Quiz 02 702880561</h1>
       <div className='flex'>
         <Mouse/>
         <Monitor/>
