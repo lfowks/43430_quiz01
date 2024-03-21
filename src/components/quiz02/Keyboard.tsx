@@ -1,10 +1,13 @@
 
-const Keyboard = () => {
+const Keyboard = ({counter}) => {
  
   const price = 90;
 
   return (
-    <div className="card">Keyboard ${price}</div>
+    <div className="card">
+      {counter+90}
+      Keyboard ${price}
+      </div>
   )
 }
 

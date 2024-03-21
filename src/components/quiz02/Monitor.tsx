@@ -1,10 +1,12 @@
 
-const Monitor = () => {
+const Monitor = ({counter}) => {
 
   const price = 100;
   
   return (
-    <div className="card">Monitor ${price}</div>
+    <div className="card">
+      {counter+100}
+      Monitor ${price}</div>
   )
 }
 
