@@ -1,14 +1,18 @@
 
 import Keyboard from "./Keyboard";
 
-const Mouse = () => {
+const Mouse = ({setTotal,total}) => {
 
   const price = 60;
 
+  const SumarTotal = () => {
+    setTotal(total + price);
+  }
+
   return (
     <div className="flex">
-     <div className="card">Mouse ${price}</div>
-     <Keyboard/>
+     <div className="card" onClick={SumarTotal}>Mouse ${price}</div>
+     <Keyboard total={total} setTotal={setTotal}/>  
     </div>
   )
 }
