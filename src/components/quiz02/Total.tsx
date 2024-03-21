@@ -1,8 +1,8 @@
 
-const Total = () => {
+const Total = ({total }: { total: number }) => {
 
   return (
-    <div>Total: $0</div>
+    <div>Total: ${total}</div>
   )
 }
 

@@ -1,14 +1,14 @@
 
 import Keyboard from "./Keyboard";
 
-const Mouse = () => {
+const Mouse = ({ onClick }: { onClick: () => void }) => {
 
   const price = 60;
 
   return (
     <div className="flex">
-     <div className="card">Mouse ${price}</div>
-     <Keyboard/>
+     <div className="card"onClick={onClick}>Mouse ${price}</div>
+     <Keyboard onClick={onClick}/>
     </div>
   )
 }
