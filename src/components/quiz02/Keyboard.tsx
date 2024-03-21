@@ -1,11 +1,16 @@
+import React, { useState, useEffect } from 'react';
 
 const Keyboard = () => {
- 
-  const price = 90;
+  const [price, setPrice] = useState(90);
+
+  useEffect(() => {
+    console.log("Precio actualizado:", price);
+  }, [price]);
 
   return (
-    <div className="card">Keyboard ${price}</div>
-  )
+    <div className="card" onClick={() => setPrice(price + 90)}>Keyboard $90</div>
+  );
 }
 
 export default Keyboard
+
