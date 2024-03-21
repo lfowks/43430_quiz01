@@ -1,13 +1,17 @@
+import React, { useState, useEffect } from 'react';
 
 import Keyboard from "./Keyboard";
 
 const Mouse = () => {
+  const [price, setPrice] = useState(90);
 
-  const price = 60;
+  useEffect(() => {
+    console.log("Precio Mouse actualizado:", price);
+  }, [price]);
 
   return (
     <div className="flex">
-     <div className="card">Mouse ${price}</div>
+      <div className="card" onClick={() => setPrice(price + 100)}>Mouse $60</div>
      <Keyboard/>
     </div>
   )

@@ -4,7 +4,7 @@ const Keyboard = () => {
   const [price, setPrice] = useState(90);
 
   useEffect(() => {
-    console.log("Precio actualizado:", price);
+    console.log("Precio Keyboard actualizado:", price);
   }, [price]);
 
   return (
