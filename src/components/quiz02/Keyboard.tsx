@@ -1,10 +1,15 @@
 
 const Keyboard = () => {
- 
-  const price = 90;
-
+  const[quantity, setQuantity]= useState(0);
+  const price = 90
   return (
-    <div className="card">Keyboard ${price}</div>
+    <div className="card">
+      Keyboard ${price}
+     
+      
+      
+      </div>
+
   )
 }
 
