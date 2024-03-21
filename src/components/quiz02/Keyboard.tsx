@@ -1,10 +1,15 @@
 
-const Keyboard = () => {
+const Keyboard = ({counter, setCounter}) => {
  
   const price = 90;
 
+  const add = () =>{
+    setCounter(price + counter);
+  }
+
+
   return (
-    <div className="card">Keyboard ${price}</div>
+    <div className="card" onClick={add}>Keyboard ${price}</div>
   )
 }
 

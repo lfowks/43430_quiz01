@@ -1,8 +1,10 @@
 
-const Total = () => {
+const Total = ({counter, counterAll , setCounter}) => {
+
+ 
 
   return (
-    <div>Total: $0</div>
+    <div>Total: {counter}</div>
   )
 }
 

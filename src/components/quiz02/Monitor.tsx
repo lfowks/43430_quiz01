@@ -1,10 +1,14 @@
 
-const Monitor = () => {
+const Monitor = ({counter, setCounter}) => {
+
+  const add = () =>{
+    setCounter(price + counter);
+  }
 
   const price = 100;
   
   return (
-    <div className="card">Monitor ${price}</div>
+    <div className="card" onClick={add}>Monitor ${price}</div>
   )
 }
 
