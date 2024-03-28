@@ -1,10 +1,14 @@
 
+import { useContext } from "react";
 import Keyboard from "./Keyboard";
+import { MyContext } from "../../useContext/MyContext";
 
-const Mouse = ({counter, setCounter}) => {
+const Mouse = () => {
+
+  const {total, setTotal} = useContext(MyContext)
 
   const add = () =>{
-    setCounter(price + counter);
+    setTotal(price + total);
   }
 
   const price = 60;
@@ -12,7 +16,7 @@ const Mouse = ({counter, setCounter}) => {
   return (
     <div className="flex">
      <div className="card" onClick={add}>Mouse ${price}</div>
-     <Keyboard counter={counter} setCounter={setCounter}/>
+     <Keyboard />
     </div>
   )
 }

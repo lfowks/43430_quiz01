@@ -2,30 +2,23 @@ import './App.css'
 import Mouse from './components/quiz02/Mouse'
 import Monitor from './components/quiz02/Monitor'
 import Total from './components/quiz02/Total'
-import { useEffect, useState } from 'react'
+import {} from 'react'
+import MyContextProvider from './useContext/MyContextProvider'
 
 function App() {
-
- const [counter, setCounter] = useState(0);
- const [counterTotal, setCounterTotal] = useState(0);
-
-useEffect(() => {
-  setCounter(counterTotal)
-}, [counterTotal])
-
- 
- 
 
   return (
     <>
       <h1>Quiz 02-504500656</h1>
+      <MyContextProvider>
       <div className='flex'>
-        <Mouse counter={counter} setCounter={setCounter}/>
-        <Monitor counter={counter} setCounter={setCounter}/>
+        <Mouse/>
+        <Monitor/>
       </div>
       <div className='totals'>
-        <Total counter={counter} counterAll={setCounterTotal} />
+        <Total/>
       </div>
+      </MyContextProvider>
     </>
   )
 }

@@ -1,10 +1,14 @@
+import { useContext } from "react";
+import { MyContext } from "../../useContext/MyContext";
 
-const Keyboard = ({counter, setCounter}) => {
+const Keyboard = () => {
  
+  const {total, setTotal} = useContext(MyContext)
+
   const price = 90;
 
   const add = () =>{
-    setCounter(price + counter);
+    setTotal(price + total);
   }
 
 
